@@ -1,8 +1,6 @@
 package com.example.playergame.common;
 
-/**
- * Immutable value object for messages exchanged between players.
- */
+
 import java.io.Serializable;
 
 /**
