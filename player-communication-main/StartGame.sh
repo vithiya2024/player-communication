@@ -12,6 +12,6 @@ if [ "$1" == "multi" ]; then
   wait $SERVER_PID
 else
   echo "Starting single-process mode..."
-  java -cp target/player-communication-1.0-SNAPSHOT.jar com.example.playergame.App
+  java -cp target/player-communication-1.0-SNAPSHOT.jar com.example.playergame.PlayerCommunicationApp
 fi
 

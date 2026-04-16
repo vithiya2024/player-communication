@@ -1,6 +1,7 @@
 # Player Communication Game
 
-This project is a Java-based game that supports both single-process and multi-process modes. It uses Maven for build management.
+This project is a Java-based game that supports both single-process and multi-process modes. 
+It uses Maven for build management.
 
 ## Features
 - Single-process mode: Runs the game in a single Java process.
@@ -25,12 +26,11 @@ player-communication/
            └── com
                └── example
                    └── playergame
-                       |   └── App.java
+                       |   └── PlayerCommunicationApp.java
                        ├── common
                        |   └── Message.java                    
                        ├── single_process
-                       |   ├── Player.java
-                       |   └── GameController.java
+                       |   └── Player.java
                        └── multi_process
                            ├── PlayerServer.java
                            └── PlayerClient.java
@@ -48,7 +48,7 @@ mvn clean package
 ```bash
 ./StartGame.sh 
 # or
-java -cp target/player-communication-1.0-SNAPSHOT.jar com.example.playergame.App
+java -cp target/player-communication-1.0-SNAPSHOT.jar com.example.playergame.PlayerCommunicationApp
    
 ```
 
@@ -63,7 +63,7 @@ java -cp target/player-communication-1.0-SNAPSHOT.jar com.example.playergame.App
 ## MULTI_PROCESS
 This runs two processes (separate JVMs) communicating over TCP sockets.
 
-## How to build
+### How to build
 ```bash
 mvn clean package
 ```

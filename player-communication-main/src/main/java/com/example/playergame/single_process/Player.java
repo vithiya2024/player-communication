@@ -9,14 +9,16 @@ import java.util.concurrent.BlockingQueue;
  * Each player runs on its own thread within the same JVM.
  */
 public class Player implements Runnable {
+
     private final String name;
     private final BlockingQueue<Message> inbox;
+    private final boolean initiator;
+    private final int maxMessages = 10;
     private BlockingQueue<Message> peerInbox;
     private int counter = 0;
-    private volatile boolean running = true;
-    private final boolean initiator;
     private int messagesExchanged = 0;
-    private final int maxMessages = 10;
+    private volatile boolean running = true;
+
 
     public Player(String name, BlockingQueue<Message> inbox, boolean initiator) {
         this.name = name;

@@ -9,6 +9,7 @@ import java.io.Serializable;
  * Immutable value object for messages exchanged between players.
  */
 public class Message implements Serializable {
+
     private static final long serialVersionUID = 1L;
     private final String content;
     private final int counter;

@@ -12,6 +12,7 @@ import java.net.Socket;
  * Player running as server. Waits for connection and replies to messages.
  */
 public class PlayerServer {
+
     private final int port;
 
     public PlayerServer(int port) {
